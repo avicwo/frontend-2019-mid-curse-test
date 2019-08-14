@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.student-contributer {
+    background-color: peachpuff;
+    width:100%;
+    margin:0 auto;
+    height:200px;
+    text-align: center;
+}
+
+.student-contributer > p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color:white;
+    line-height: 200px;
+    text-shadow: 2px 2px 2px purple;
+}
