@@ -1,3 +1,181 @@
+/* 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+
 *{
-    display: flex;
+    box-sizing: border-box;
 }
+
+body{
+	direction: rtl;
+    text-align: right;
+    /*need to add connection to google font */ 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.maincontainer {
+    position: relative;
+    text-decoration: none;
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+}
+.menu{
+    display: block;
+    widows: 100%;
+    background-color: grey;
+    height: 105px;
+    position: relative;
+    z-index: 100;
+}
+.section1-row>.section1{
+    display: inline;
+    position: absolute;
+    width: 293px;
+    height: 355px;
+    right:100px;
+    top: 130px;
+    right: 0px;
+    border-bottom-right-radius: 30px;
+    background-image: url("images/images/1908364606615453350.JPG");
+}
+.section1-row>.section1>.section1_1>h4,.section1-row>.section2>.section2_1>h4
+,.section1-row>.section3>.section3_1>h4{
+    padding: 0;
+    margin: 0;
+}
+.section1-row>.section1>.section1_1>p,.section1-row>.section2>.section2_1>p
+,.section1-row>.section3>.section3_1>p{   
+    padding: 0;
+    margin: 0;
+    font-size: 14px;    
+}
+.section1-row>.section1>.section1_1{
+    /* display: inline; */
+    color: white;
+    position: absolute;
+    width: 277px;
+    height: 90px;
+    right:100px;
+    top: 257px;
+    right: 8px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(122, 118, 118,0.5);
+}
+
+.section1-row>.section2{
+    display: inline;
+    position: absolute;  
+    width: 293px;
+    height: 355px;
+    top: 130px;
+    right:305px;
+    border-bottom-right-radius: 30px;
+    background-image: url("images/images/Picture-046410251500.jpg");
+}
+.section1-row>.section2>.section2_1{
+    /* display: inline; */
+    color: white;
+    position: absolute;
+    width: 277px;
+    height: 90px;
+    right:100px;
+    top: 257px;
+    right: 8px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(122, 118, 118,0.5);
+}
+.section1-row>.section3{
+    display: inline;
+    position: absolute;
+    width: 293px;
+    height: 355px;
+    top: 130px;
+    right:610px;
+    border-bottom-right-radius: 30px;
+    background-image: url("images/images/פזקר_-291_354410564000.jpg");
+}
+.section1-row>.section3>.section3_1{
+    /* display: inline; */
+    color: white;
+    position: absolute;
+    width: 277px;
+    height: 90px;
+    right:100px;
+    top: 257px;
+    right: 8px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(122, 118, 118,0.5);
+}
+
+.section2-row>.section1{
+    display: inline;
+    position: absolute;
+    width: 293px;
+    height: 110px;
+    right:100px;
+    top: 530px;
+    right: 0px;
+    border-bottom-right-radius: 30px;
+    background-image: url("images/images/paz_250x110059890678.jpg");
+}
+
+.section2-row>.section2{
+    display: inline;
+    position: absolute;  
+    width: 293px;
+    height: 110px;
+    top: 530px;
+    right:305px;
+    border-bottom-right-radius: 30px;
+    background-image: url("images/images/paz_250x110103131473.jpg");
+}
+
+.section2-row>.section3{
+    display: inline;
+    position: absolute;  
+    width: 293px;
+    height: 110px;
+    top: 530px;
+    right:610px;
+    border-bottom-right-radius: 30px;
+    background-image: url("images/images/Untitled-3058756287.jpg");
+}
+
+
+
+
+/* li {
+    text-decoration: none;
+}
+
+.maincontainer {
+    text-decoration: none;
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background-color: aqua;
+
+}
+.menu{
+    display: inline;
+} */
