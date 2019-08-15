@@ -27,37 +27,67 @@ time, mark, audio, video {
 body{
 	direction: rtl;
     text-align: right;
-    /*need to add connection to google font */ 
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/*main structure css*/
+.container{
+    background: rgb(144,144,144);
+    background: linear-gradient(180deg, rgba(144,144,144,1) 90%, rgba(167,167,167,1) 90%);    height: 105px;
+}
 .maincontainer {
     position: relative;
     text-decoration: none;
     width: 900px;
     margin: 0 auto;
     padding-bottom: 30px;
-
 }
 .menu{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.1em;
     widows: 100%;
-    background-color: grey;
+    background: rgb(144,144,144);
+    background: linear-gradient(180deg, rgba(144,144,144,1) 90%, rgba(167,167,167,1) 90%);
     height: 105px;
-    position: relative;
     z-index: 100;
+
+}
+.section1-row{
+    margin-top: 30px;
+}
+.section1-row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.reasmoreicon{
+    color: white;
+    float: left;
 }
 .section1-row>.section1{
-    display: inline;
-    position: absolute;
-    width: 293px;
+    float: right;
+    width: 32.33%;
     height: 355px;
-    right:100px;
-    top: 130px;
-    right: 0px;
     border-bottom-right-radius: 30px;
     background-image: url("images/images/1908364606615453350.JPG");
 }
+.section1-row>.section2{
+    float: right;
+    margin-right: 14px;
+    width: 32.33%;
+    height: 355px;
+    border-bottom-right-radius: 30px;
+    background-image: url("images/images/Picture-046410251500.jpg");
+}
+.section1-row>.section3{
+    float: left;
+    width: 32.33%;
+    height: 355px;
+    border-bottom-right-radius: 30px;
+    background-image: url("images/images/פזקר_-291_354410564000.jpg");
+}   
+
 .section1-row>.section1>.section1_1>h4,.section1-row>.section2>.section2_1>h4
 ,.section1-row>.section3>.section3_1>h4{
     padding: 0;
@@ -69,113 +99,44 @@ body{
     margin: 0;
     font-size: 14px;    
 }
-.section1-row>.section1>.section1_1{
-    /* display: inline; */
-    color: white;
-    position: absolute;
-    width: 277px;
-    height: 90px;
-    right:100px;
-    top: 257px;
-    right: 8px;
+.section1-row>.section1>.section1_1,.section1-row>.section2>.section2_1,.section1-row>.section3>.section3_1{
+    color: white; 
+    width: 245px;
+    padding-right:8px;
+    height: 100px;
     border-bottom-right-radius: 30px;
-    background-color: rgb(122, 118, 118,0.5);
+    background-color: rgb(144, 144, 144,0.8);
 }
 
-.section1-row>.section2{
-    display: inline;
-    position: absolute;  
-    width: 293px;
-    height: 355px;
-    top: 130px;
-    right:305px;
-    border-bottom-right-radius: 30px;
-    background-image: url("images/images/Picture-046410251500.jpg");
-}
-.section1-row>.section2>.section2_1{
-    /* display: inline; */
-    color: white;
-    position: absolute;
-    width: 277px;
-    height: 90px;
-    right:100px;
-    top: 257px;
-    right: 8px;
-    border-bottom-right-radius: 30px;
-    background-color: rgb(122, 118, 118,0.5);
-}
-.section1-row>.section3{
-    display: inline;
-    position: absolute;
-    width: 293px;
-    height: 355px;
-    top: 130px;
-    right:610px;
-    border-bottom-right-radius: 30px;
-    background-image: url("images/images/פזקר_-291_354410564000.jpg");
-}
-.section1-row>.section3>.section3_1{
-    /* display: inline; */
-    color: white;
-    position: absolute;
-    width: 277px;
-    height: 90px;
-    right:100px;
-    top: 257px;
-    right: 8px;
-    border-bottom-right-radius: 30px;
-    background-color: rgb(122, 118, 118,0.5);
+.section1-row>.section1,.section1-row>.section2,.section1-row>.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
 
-.section2-row>.section1{
-    display: inline;
-    position: absolute;
-    width: 293px;
-    height: 110px;
-    right:100px;
-    top: 530px;
-    right: 0px;
-    border-bottom-right-radius: 30px;
-    background-image: url("images/images/paz_250x110059890678.jpg");
-}
+/*nav css*/
 
-.section2-row>.section2{
-    display: inline;
-    position: absolute;  
-    width: 293px;
-    height: 110px;
-    top: 530px;
-    right:305px;
-    border-bottom-right-radius: 30px;
-    background-image: url("images/images/paz_250x110103131473.jpg");
-}
-
-.section2-row>.section3{
-    display: inline;
-    position: absolute;  
-    width: 293px;
-    height: 110px;
-    top: 530px;
-    right:610px;
-    border-bottom-right-radius: 30px;
-    background-image: url("images/images/Untitled-3058756287.jpg");
-}
-
-
-
-
-/* li {
+a{
     text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+li,ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+
+}
+nav>ul{
+padding-right: 10px;
 }
 
-.maincontainer {
-    text-decoration: none;
-    width: 900px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    background-color: aqua;
 
-}
-.menu{
-    display: inline;
-} */
+.menu>li{
+    margin: 10px;
+    color: white;
+    }
