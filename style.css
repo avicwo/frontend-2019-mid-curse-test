@@ -20,20 +20,40 @@ time, mark, audio, video {
 	vertical-align: baseline;
 } */
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-	direction: rtl;
+body {
+    direction: rtl;
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 /*main structure css*/
-.container{
-    background: rgb(144,144,144);
-    background: linear-gradient(180deg, rgba(144,144,144,1) 90%, rgba(167,167,167,1) 90%);    height: 105px;
+
+.pazimg {
+    position: relative;
+    top: 25px;
 }
+
+.container {
+    height: 105px;
+    background: rgb(144, 144, 144);
+    background: linear-gradient(180deg, rgba(144, 144, 144, 1) 90%, rgba(167, 167, 167, 1) 90%);
+    height: 105px;
+}
+
+#searchbox {
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
 .maincontainer {
     position: relative;
     text-decoration: none;
@@ -41,38 +61,50 @@ body{
     margin: 0 auto;
     padding-bottom: 30px;
 }
-.menu{
+
+.menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-end;
-    font-size: 1.1em;
-    widows: 100%;
-    background: rgb(144,144,144);
-    background: linear-gradient(180deg, rgba(144,144,144,1) 90%, rgba(167,167,167,1) 90%);
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    background: rgb(144, 144, 144);
+    background: linear-gradient(180deg, rgba(144, 144, 144, 1) 90%, rgba(167, 167, 167, 1) 90%);
     height: 105px;
     z-index: 100;
-
+    font-size: 17px;
 }
-.section1-row{
+
+.mainclass {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.section1-row {
     margin-top: 30px;
 }
-.section1-row::after{
+
+.section1-row::after {
     content: "";
     display: table;
     clear: both;
 }
-.reasmoreicon{
+
+.read-more-icon {
     color: white;
     float: left;
 }
-.section1-row>.section1{
+
+.section1-row>.section1 {
     float: right;
     width: 32.33%;
     height: 355px;
     border-bottom-right-radius: 30px;
     background-image: url("images/images/1908364606615453350.JPG");
 }
-.section1-row>.section2{
+
+.section1-row>.section2 {
     float: right;
     margin-right: 14px;
     width: 32.33%;
@@ -80,35 +112,44 @@ body{
     border-bottom-right-radius: 30px;
     background-image: url("images/images/Picture-046410251500.jpg");
 }
-.section1-row>.section3{
+
+.section1-row>.section3 {
     float: left;
     width: 32.33%;
     height: 355px;
     border-bottom-right-radius: 30px;
     background-image: url("images/images/פזקר_-291_354410564000.jpg");
-}   
+}
 
-.section1-row>.section1>.section1_1>h4,.section1-row>.section2>.section2_1>h4
-,.section1-row>.section3>.section3_1>h4{
+.section1-row>.section1>.section1_1>h4,
+.section1-row>.section2>.section2_1>h4,
+.section1-row>.section3>.section3_1>h4 {
     padding: 0;
     margin: 0;
 }
-.section1-row>.section1>.section1_1>p,.section1-row>.section2>.section2_1>p
-,.section1-row>.section3>.section3_1>p{   
+
+.section1-row>.section1>.section1_1>p,
+.section1-row>.section2>.section2_1>p,
+.section1-row>.section3>.section3_1>p {
     padding: 0;
     margin: 0;
-    font-size: 14px;    
+    font-size: 14px;
 }
-.section1-row>.section1>.section1_1,.section1-row>.section2>.section2_1,.section1-row>.section3>.section3_1{
-    color: white; 
+
+.section1-row>.section1>.section1_1,
+.section1-row>.section2>.section2_1,
+.section1-row>.section3>.section3_1 {
+    color: white;
     width: 245px;
-    padding-right:8px;
+    padding-right: 8px;
     height: 100px;
     border-bottom-right-radius: 30px;
-    background-color: rgb(144, 144, 144,0.8);
+    background-color: rgb(144, 144, 144, 0.8);
 }
 
-.section1-row>.section1,.section1-row>.section2,.section1-row>.section3{
+.section1-row>.section1,
+.section1-row>.section2,
+.section1-row>.section3 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -116,27 +157,50 @@ body{
     padding-right: 10px;
 }
 
+
 /*nav css*/
 
-a{
+a {
     text-decoration: none;
-    margin: 0px;
-    padding: 0px;
     color: white;
 }
-li,ul{
+
+li,
+ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
     color: white;
-
-}
-nav>ul{
-padding-right: 10px;
 }
 
-
-.menu>li{
-    margin: 10px;
+.container>.maincontainer>.navclass>.menu>.dropdown {
+    position: relative;
+    margin-bottom: 15px;
     color: white;
-    }
+}
+
+.homebtn {
+    position: relative;
+    top: -14px;
+}
+
+.navclass>.menu>.dropdown>.dropdown-content {
+    position: absolute;
+    display: none;
+    width: 120px;
+    background: rgb(144, 144, 144);
+    background: linear-gradient(0deg, rgba(144, 144, 144, 1) 90%, rgba(167, 167, 167, 1) 90%);
+    padding: 2px;
+    top: 150%;
+}
+
+.navclass>.menu>.dropdown:hover>.dropdown-content {
+    display: block;
+}
+
+
+/*need to ammend the border here*/
+
+.navclass>.menu>.dropdown:hover>.dropdown-content>a {
+    border-bottom: 1px solid white;
+}
