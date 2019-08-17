@@ -249,13 +249,13 @@
     .section2-row>.section1>div>h3,
     .section2-row>.section2>div>h3,
     .section2-row>.section3>div>h3,
-    .section2-row>.section1>div>img,
-    .section2-row>.section2>div>img,
+    .section2-row>.section1>div>a>img,
+    .section2-row>.section2>div>a>img,
     .section2-row>.section3>div>div>a {
         margin-right: 15px;
     }
     
-    .section2-row>.section3>div>img {
+    .section2-row>.section3>div>a>img {
         float: left;
         margin-left: 20px;
     }
@@ -293,8 +293,14 @@
     .footerdiv {
         position: flex;
         padding: 2px;
+        right: 220px;
     }
     
-    .footerdiv {
-        right: 220px;
+    .fortherdetails {
+        float: left;
+        margin-left: 22px;
+    }
+    
+    .hoverblue:hover {
+        color: blue;
     }
