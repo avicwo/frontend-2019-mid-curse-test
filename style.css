@@ -154,10 +154,11 @@
         padding-right: 10px;
     }
     /*nav css*/
-    /* a {
+    
+    a {
         text-decoration: unset;
-        color: white;
-    } */
+        /* color: white; */
+    }
     
     li,
     ul {
@@ -271,23 +272,29 @@
         position: fixed;
         display: block;
         height: 38px;
-        padding: 45px;
         padding-top: 1px;
         width: 100%;
         bottom: 0;
         font-size: 14px;
         background: linear-gradient(rgba(167, 167, 167), rgb(144, 144, 144));
     }
-    
-    .sepfooter {
+    /* .sepfooter {
         padding-top: 5px;
-    }
+    } */
     
     .setelemtnlink {
         color: red;
     }
     
     #englishsite:hover {
-        /* color: blue; */
-        /* font-family: 'Courier New', Courier, monospace; */
+        color: blue;
+    }
+    
+    .footerdiv {
+        position: flex;
+        padding: 2px;
+    }
+    
+    .footerdiv {
+        right: 220px;
     }
