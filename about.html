@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>פז - עמוד הבית</title>
+    <title>פז - צור קשר</title>
     <link rel="shortcut icon" href="/images/images/paz_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -16,13 +16,15 @@
         <div class="container">
             <div class="maincontainer">
                 <form id="searchbox">
-                    <span id="englishsite"><a href="#">English</a></span>
+                    <span id="englishsite">
+                        <a id="englishlink" href="#">English</a>
+                    </span>
                     <input type="text" name="search" placeholder="רשום מילת חיפוש" id="">
                     <img id="searchimg" src="images/images/search_button.png" alt="search botton">
                 </form>
                 <nav class="navclass">
-                    <ul class="menu">
-                        <a href="#">
+                    <ul id="menuid" class="menu">
+                        <a href="index.html">
                             <img class="pazimg" src="images/images/paz_logo.png" alt="paz logo">
                         </a>
                         <li>
@@ -131,96 +133,74 @@
         </div>
     </header>
 
-    <main class="mainclass">
-        <div class="section1-row">
-            <div class="section1">
-                <div class="section1_1">
-                    <h4>קמעונאות ומסחר</h4>
-                    <p>מסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</p>
-                    <a class="read-more-icon" href="#" target="_blank">קרא עוד
-                    </a>
+    <main class="contact-mainclass">
+        <div class="contact-sidemenu">
+            <ul>
+                <li>
 
-                </div>
-            </div>
-            <div class="section2">
-                <div class="section2_1">
-                    <h4> זיקוק</h4>
-                    <p>פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...</p>
-                    <a class="read-more-icon" href="#" target="_blank">קרא עוד
+                    <a href="#"><span>
+                        <span class="triangle-left"></span>
+                        צור קשר
                     </a>
+                </li>
+            </ul>
 
-                </div>
+        </div>
+        <div class="contact-middle">
+            <div class="treelink">
+                <a href="index.html">עמוד הבית</a>
+                <span> > </span>
+                <span> צור קשר</span>
             </div>
-            <div class="section3">
-                <div class="section3_1">
-                    <h4> תעשיות ושירותים</h4>
-                    <p>תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...</p>
-                    <a class="read-more-icon" href="#" target="_blank">קרא עוד
-                    </a>
+            <div class="contact-header">
+                <h1>צור קשר</h1>
+            </div>
 
+            <div class="contact-from">
+                <div class="form">
+                    <h2>צור קשר</h2>
+                    <span>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</span>
+                    <span>* השדות המסומנים בכוכבית (*) הינם שדות חובה
+                </span>
+                    <form class="form1">
+                        <div>
+                            <label for="firstname">*שם פרטי:</label>
+                            <input id="firstname" type="text">
+                        </div>
+                        <div>
+                            <label for="lastname">*שם משפחה:</label>
+                            <input id="lastname" type="text">
+                        </div>
+                        <div>
+                            <label for="phone">*טלפון:</label>
+                            <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </div>
+                        <div>
+                            <label for="email">*E-mail:</label>
+                            <input id="email" type="email">
+                        </div>
+                        <div>
+                            <label for="text"></label>
+                            <input placeholder="תוכן הפנייה" id="text" type="text" size="200">
+                        </div>
+                        <button>שלח</button>
+                    </form>
                 </div>
+
             </div>
+
+
         </div>
 
-        <div class="section2-row">
-            <div class="section1">
-                <div>
-                    <h3>כרטיס אשראי שופרסל וכרטיס אשראי יש</h3>
-                    <a href="#"><img src="images/images/paz_250x110059890678.jpg" alt="banner">
-                    </a>
-                    <div class="fortherdetails">
-                        <span>לפרטים נוספים</span>
-                    </div>
-                </div>
-            </div>
-            <div class="section2">
-                <div>
-                    <h3>Yellow Click&Pick</h3>
-                    <a id="bannerLink" href="http://www.paz.co.il">
-                        <img id="bannerImage" src="images/images/paz_250x110103131473.jpg" alt="banner">
-                    </a>
-                    <div class="fortherdetails">
-                        <span>לפרטים נוספים</span>
-                    </div>
-                </div>
-            </div>
-            <div class="section3">
-                <div>
-                    <h3> התחנות שלנו בדרך </h3>
-                    <a href="#"><img src="images/images/Untitled-3058756287.jpg" alt="our station map">
-                    </a>
-                    <div>
-                        <div>
-                            <a class="changeicon" href="#">
-                                <span>צפון&nbsp
-                            </span>
-                            </a>
-                        </div>
-                        <div>
-                            <a class="changeicon" href="#">
-                                <span>מרכז
-                            </span>
-                            </a>
-                        </div>
-                        <div>
-                            <a class="changeicon" href="#">
-                                <span>דרום
-                            </span>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
+
 
     <footer>
         <div class="footerdiv">
             <a href="#"><img src="images/images/fb_icon.png" alt="fb icon"></a>
             <img class="sepfooter" src="images/images/menu_sep.png" alt="meu menu_sep">
 
-            <a class="hoverblue" href="#">עמוד הבית</a>
+            <a class="hoverblue" href="index.html">עמוד הבית</a>
             <img class="sepfooter" src="images/images/menu_sep.png" alt="meu menu_sep">
 
             <a class="hoverblue" href="#"> מחירונים</a>
@@ -235,13 +215,13 @@
             <a class="hoverblue" href="#"> מפת אתר</a>
             <img class="sepfooter" src="images/images/menu_sep.png" alt="meu menu_sep">
 
-            <a class="hoverblue" href="about.html"> צור קשר</a>
+            <a class="hoverblue" href="about.html" target="_about"> צור קשר</a>
             <img class="sepfooter" src="images/images/menu_sep.png" alt="meu menu_sep">
 
             <a class="hoverblue" href="#"> שטחי מסחר</a>
             <img class="sepfooter" src="images/images/menu_sep.png" alt="meu menu_sep">
 
-            <a class="setelemtnlink" href="#"> הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a>
+            <a id="setelemtnlink" href="#"> הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a>
         </div>
 
     </footer>
